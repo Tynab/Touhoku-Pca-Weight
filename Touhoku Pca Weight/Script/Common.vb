@@ -258,6 +258,26 @@ Friend Module Common
             DctVal(xlApp, $"BA{row}", number)
         End If
     End Sub
+
+    ''' <summary>
+    ''' Publish double mod value to excel.
+    ''' </summary>
+    ''' <param name="xlApp">Excel application.</param>
+    ''' <param name="row">Row number.</param>
+    ''' <param name="d">Diameter.</param>
+    ''' <param name="title">Title rebar.</param>
+    ''' <param name="name">Name rebar.</param>
+    ''' <param name="weight">Weight rebar.</param>
+    ''' <param name="number">Number rebar.</param>
+    Friend Sub PubDModVal(xlApp As Microsoft.Office.Interop.Excel.Application, row As String, d As String, title As String, name As String, weight As Double, number As Double)
+        If number > 0 Then
+            DctVal(xlApp, $"S{row}", d)
+            DctVal(xlApp, $"X{row}", title)
+            DctVal(xlApp, $"AH{row}", name)
+            ModVal(xlApp, $"CM{row}", weight)
+            DctVal(xlApp, $"BA{row}", number)
+        End If
+    End Sub
 #End Region
 
 #Region "Timer"

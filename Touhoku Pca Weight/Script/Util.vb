@@ -2,198 +2,113 @@
 
 Friend Module Util
     ''' <summary>
-    ''' 運賃(2トン車).
+    ''' 運賃 (2トン車).
     ''' </summary>
     ''' <param name="xlApp">Excel Application.</param>
     ''' <param name="choosen">Selection.</param>
     Friend Sub Fare(xlApp As Application, choosen As Double)
         If choosen = 1 Then
-            DctVal(xlApp, "BA271", choosen)
-            DctVal(xlApp, "BA158", 3) ' D16
-            DctVal(xlApp, "BA159", 2) ' D13
-            DctVal(xlApp, "BA160", 4) ' D10
-        Else
-            DctVal(xlApp, "BA161", 2) ' D16
-            DctVal(xlApp, "BA162", 1) ' D13
-            DctVal(xlApp, "BA163", 3) ' D10
+            DctVal(xlApp, "BA151", choosen)
         End If
     End Sub
 
     ''' <summary>
-    ''' 外周深GL-300.
+    ''' 下端 (D13).
+    ''' </summary>
+    ''' <param name="xlApp">Excel Application.</param>
+    ''' <param name="truck2Ton">2 ton truck.</param>
+    Friend Sub LwrEnd(xlApp As Application, truck2Ton As Double)
+        If Not truck2Ton = 1 Then
+            PubDVal(xlApp, "BA92", DtlDInp(vbTab & "5500: "))
+            PubDVal(xlApp, "BA93", DtlDInp(vbTab & "5000: "))
+        End If
+        PubDVal(xlApp, "BA94", DtlDInp(vbTab & "4500: "))
+        PubDVal(xlApp, "BA95", DtlDInp(vbTab & "4000: "))
+        PubDVal(xlApp, "BA96", DtlDInp(vbTab & "3500: "))
+        PubDVal(xlApp, "BA97", DtlDInp(vbTab & "3000: "))
+        PubDVal(xlApp, "BA98", DtlDInp(vbTab & "2500: "))
+        PubDVal(xlApp, "BA99", DtlDInp(vbTab & "2000: "))
+        PubDVal(xlApp, "BA100", DtlDInp(vbTab & "1500: "))
+        PubDVal(xlApp, "BA101", DtlDInp(vbTab & "1000: "))
+    End Sub
+
+    ''' <summary>
+    ''' 端部 (D10).
+    ''' </summary>
+    ''' <param name="xlApp">Excel Application.</param>
+    ''' <param name="truck2Ton">2 ton truck.</param>
+    Friend Sub Edge(xlApp As Application, truck2Ton As Double)
+        If Not truck2Ton = 1 Then
+            PubDVal(xlApp, "BA79", DtlDInp(vbTab & "5500: "))
+            PubDVal(xlApp, "BA80", DtlDInp(vbTab & "5000: "))
+        End If
+        PubDVal(xlApp, "BA81", DtlDInp(vbTab & "4500: "))
+        PubDVal(xlApp, "BA82", DtlDInp(vbTab & "4000: "))
+        PubDVal(xlApp, "BA83", DtlDInp(vbTab & "3500: "))
+        PubDVal(xlApp, "BA84", DtlDInp(vbTab & "3000: "))
+        PubDVal(xlApp, "BA85", DtlDInp(vbTab & "2500: "))
+        PubDVal(xlApp, "BA86", DtlDInp(vbTab & "2000: "))
+        PubDVal(xlApp, "BA87", DtlDInp(vbTab & "1500: "))
+        PubDVal(xlApp, "BA88", DtlDInp(vbTab & "1000: "))
+    End Sub
+
+    ''' <summary>
+    ''' 深基礎 (D16).
+    ''' </summary>
+    ''' <param name="xlApp">Excel Application.</param>
+    ''' <param name="truck2Ton">2 ton truck.</param>
+    Friend Sub DeepFnd(xlApp As Application, truck2Ton As Double)
+        If Not truck2Ton = 1 Then
+            PubDVal(xlApp, "BA102", DtlDInp(vbTab & "5500: "))
+            PubDVal(xlApp, "BA103", DtlDInp(vbTab & "5000: "))
+        End If
+        PubDVal(xlApp, "BA104", DtlDInp(vbTab & "4500: "))
+        PubDVal(xlApp, "BA105", DtlDInp(vbTab & "4000: "))
+        PubDVal(xlApp, "BA106", DtlDInp(vbTab & "3500: "))
+        PubDVal(xlApp, "BA107", DtlDInp(vbTab & "3000: "))
+        PubDVal(xlApp, "BA108", DtlDInp(vbTab & "2500: "))
+        PubDVal(xlApp, "BA109", DtlDInp(vbTab & "2000: "))
+        PubDVal(xlApp, "BA110", DtlDInp(vbTab & "1500: "))
+        PubDVal(xlApp, "BA111", DtlDInp(vbTab & "1000: "))
+    End Sub
+
+    ''' <summary>
+    ''' コーナー.
+    ''' </summary>
+    ''' <param name="xlApp">Excel Application.</param>
+    Friend Sub JtCor(xlApp As Application)
+        PubDVal(xlApp, "BA114", DtlDInp(vbTab & "D16: "))
+        PubDVal(xlApp, "BA113", DtlDInp(vbTab & "D13: "))
+        PubDVal(xlApp, "BA112", DtlDInp(vbTab & "D10: "))
+    End Sub
+
+    ''' <summary>
+    ''' 深基礎用端部スラブ (D10).
     ''' </summary>
     ''' <param name="xlApp">Excel Application.</param>
     ''' <param name="choosen">Selection.</param>
-    Friend Sub Unit300(xlApp As Application, choosen As Double)
+    Friend Sub EndSlabForDeepFnd(xlApp As Application, choosen As Double)
         If choosen = 1 Then
-            PubDVal(xlApp, "BA17", DtlDInp(vbTab & "  4G: "))
-            PubDVal(xlApp, "BA18", DtlDInp(vbTab & "3.5G: "))
-            PubDVal(xlApp, "BA19", DtlDInp(vbTab & "  3G: "))
-            PubDVal(xlApp, "BA20", DtlDInp(vbTab & "2.5G: "))
-            PubDVal(xlApp, "BA21", DtlDInp(vbTab & "  2G: "))
-            PubDVal(xlApp, "BA22", DtlDInp(vbTab & "1.5G: "))
-            PubDVal(xlApp, "BA23", DtlDInp(vbTab & "  1G: "))
-            PubDVal(xlApp, "BA24", DtlDInp(vbTab & "0.5G: "))
+            PubDModVal(xlApp, "116", "600×450　　フック付", 0.7, DtlDInpDesc(vbTab & "600×450 ", "[0.7]" & vbTab))
+            PubDVal(xlApp, "BA118", DtlDInp(vbTab & "600×350" & vbTab & vbTab & ": "))
+            PubDModVal(xlApp, "117", "600×250　　フック付", 0.6, DtlDInpDesc(vbTab & "600×250 ", "[0.6]" & vbTab))
         End If
     End Sub
 
     ''' <summary>
-    ''' 外周/内周GL-150.
-    ''' </summary>
-    ''' <param name="xlApp">Excel Application.</param>
-    Friend Sub Unit150(xlApp As Application)
-        PubDVal(xlApp, "BA27", DtlDInp(vbTab & "  4G: "))
-        PubDVal(xlApp, "BA28", DtlDInp(vbTab & "3.5G: "))
-        PubDVal(xlApp, "BA29", DtlDInp(vbTab & "  3G: "))
-        PubDVal(xlApp, "BA30", DtlDInp(vbTab & "2.5G: "))
-        PubDVal(xlApp, "BA31", DtlDInp(vbTab & "  2G: "))
-        PubDVal(xlApp, "BA32", DtlDInp(vbTab & "1.5G: "))
-        PubDVal(xlApp, "BA33", DtlDInp(vbTab & "  1G: "))
-        PubDVal(xlApp, "BA34", DtlDInp(vbTab & "0.5G: "))
-    End Sub
-
-    ''' <summary>
-    ''' 外周深GL-300/+30.
+    ''' Ｕ型 (D16).
     ''' </summary>
     ''' <param name="xlApp">Excel Application.</param>
     ''' <param name="choosen">Selection.</param>
-    Friend Sub Unit300Cut(xlApp As Application, choosen As Double)
+    Friend Sub UType(xlApp As Application, choosen As Double)
         If choosen = 1 Then
-            PubDVal(xlApp, "BA36", DtlDInp(vbTab & "  4G: "))
-            PubDVal(xlApp, "BA37", DtlDInp(vbTab & "3.5G: "))
-            PubDVal(xlApp, "BA38", DtlDInp(vbTab & "  3G: "))
-            PubDVal(xlApp, "BA39", DtlDInp(vbTab & "2.5G: "))
-            PubDVal(xlApp, "BA40", DtlDInp(vbTab & "  2G: "))
-            PubDVal(xlApp, "BA41", DtlDInp(vbTab & "1.5G: "))
-            PubDVal(xlApp, "BA42", DtlDInp(vbTab & "  1G: "))
-            PubDVal(xlApp, "BA43", DtlDInp(vbTab & "0.5G: "))
+            PubDModVal(xlApp, "119", "D16", "（コノ字型）", "900×280×900", 3.4, DtlDInpDesc(vbTab & "900×280×900 ", "[3.4]" & vbTab))
+            PubDModVal(xlApp, "121", "900×180×900", 3.2, DtlDInpDesc(vbTab & "900×180×900 ", "[3.2]" & vbTab))
+            PubDModVal(xlApp, "120", "D16", "（Ｕノ字型）", "900×80×900", 3.1, DtlDInpDesc(vbTab & "900× 80×900 ", "[3.1]" & vbTab))
         End If
     End Sub
 
-    ''' <summary>
-    ''' 外周深GL-400.
-    ''' </summary>
-    ''' <param name="xlApp">Excel Application.</param>
-    ''' <param name="choosen">Selection.</param>
-    Friend Sub Unit400(xlApp As Application, choosen As Double)
-        If choosen = 1 Then
-            PubDVal(xlApp, "BA81", DtlDInp(vbTab & "  4G: "))
-            PubDVal(xlApp, "BA82", DtlDInp(vbTab & "3.5G: "))
-            PubDVal(xlApp, "BA83", DtlDInp(vbTab & "  3G: "))
-            PubDVal(xlApp, "BA84", DtlDInp(vbTab & "2.5G: "))
-            PubDVal(xlApp, "BA85", DtlDInp(vbTab & "  2G: "))
-            PubDVal(xlApp, "BA86", DtlDInp(vbTab & "1.5G: "))
-            PubDVal(xlApp, "BA87", DtlDInp(vbTab & "  1G: "))
-            PubDVal(xlApp, "BA88", DtlDInp(vbTab & "0.5G: "))
-        End If
-    End Sub
-
-    ''' <summary>
-    ''' 外周深GL-500.
-    ''' </summary>
-    ''' <param name="xlApp">Excel Application.</param>
-    ''' <param name="choosen">Selection.</param>
-    Friend Sub Unit500(xlApp As Application, choosen As Double)
-        If choosen = 1 Then
-            PubDVal(xlApp, "BA45", DtlDInp(vbTab & "  4G: "))
-            PubDVal(xlApp, "BA46", DtlDInp(vbTab & "3.5G: "))
-            PubDVal(xlApp, "BA47", DtlDInp(vbTab & "  3G: "))
-            PubDVal(xlApp, "BA48", DtlDInp(vbTab & "2.5G: "))
-            PubDVal(xlApp, "BA49", DtlDInp(vbTab & "  2G: "))
-            PubDVal(xlApp, "BA50", DtlDInp(vbTab & "1.5G: "))
-            PubDVal(xlApp, "BA51", DtlDInp(vbTab & "  1G: "))
-            PubDVal(xlApp, "BA52", DtlDInp(vbTab & "0.5G: "))
-        End If
-    End Sub
-
-    ''' <summary>
-    ''' 外周深GL-500/+30.
-    ''' </summary>
-    ''' <param name="xlApp">Excel Application.</param>
-    ''' <param name="choosen">Selection.</param>
-    Friend Sub Unit500Cut(xlApp As Application, choosen As Double)
-        If choosen = 1 Then
-            PubDVal(xlApp, "BA54", DtlDInp(vbTab & "  4G: "))
-            PubDVal(xlApp, "BA55", DtlDInp(vbTab & "3.5G: "))
-            PubDVal(xlApp, "BA56", DtlDInp(vbTab & "  3G: "))
-            PubDVal(xlApp, "BA57", DtlDInp(vbTab & "2.5G: "))
-            PubDVal(xlApp, "BA58", DtlDInp(vbTab & "  2G: "))
-            PubDVal(xlApp, "BA59", DtlDInp(vbTab & "1.5G: "))
-            PubDVal(xlApp, "BA60", DtlDInp(vbTab & "  1G: "))
-            PubDVal(xlApp, "BA61", DtlDInp(vbTab & "0.5G: "))
-        End If
-    End Sub
-
-    ''' <summary>
-    ''' 外周深GL-600.
-    ''' </summary>
-    ''' <param name="xlApp">Excel Application.</param>
-    ''' <param name="choosen">Selection.</param>
-    Friend Sub Unit600(xlApp As Application, choosen As Double)
-        If choosen = 1 Then
-            PubDVal(xlApp, "BA63", DtlDInp(vbTab & "  4G: "))
-            PubDVal(xlApp, "BA64", DtlDInp(vbTab & "3.5G: "))
-            PubDVal(xlApp, "BA65", DtlDInp(vbTab & "  3G: "))
-            PubDVal(xlApp, "BA66", DtlDInp(vbTab & "2.5G: "))
-            PubDVal(xlApp, "BA67", DtlDInp(vbTab & "  2G: "))
-            PubDVal(xlApp, "BA68", DtlDInp(vbTab & "1.5G: "))
-            PubDVal(xlApp, "BA69", DtlDInp(vbTab & "  1G: "))
-            PubDVal(xlApp, "BA70", DtlDInp(vbTab & "0.5G: "))
-        End If
-    End Sub
-
-    ''' <summary>
-    ''' 外周深GL-700.
-    ''' </summary>
-    ''' <param name="xlApp">Excel Application.</param>
-    ''' <param name="choosen">Selection.</param>
-    Friend Sub Unit700(xlApp As Application, choosen As Double)
-        If choosen = 1 Then
-            PubDVal(xlApp, "BA72", DtlDInp(vbTab & "  4G: "))
-            PubDVal(xlApp, "BA73", DtlDInp(vbTab & "3.5G: "))
-            PubDVal(xlApp, "BA74", DtlDInp(vbTab & "  3G: "))
-            PubDVal(xlApp, "BA75", DtlDInp(vbTab & "2.5G: "))
-            PubDVal(xlApp, "BA76", DtlDInp(vbTab & "  2G: "))
-            PubDVal(xlApp, "BA77", DtlDInp(vbTab & "1.5G: "))
-            PubDVal(xlApp, "BA78", DtlDInp(vbTab & "  1G: "))
-            PubDVal(xlApp, "BA79", DtlDInp(vbTab & "0.5G: "))
-        End If
-    End Sub
-
-    ''' <summary>
-    ''' ガレージ外周GL-300.
-    ''' </summary>
-    ''' <param name="xlApp">Excel Application.</param>
-    ''' <param name="choosen">Selection.</param>
-    Friend Sub Unit300Gar(xlApp As Application, choosen As Double)
-        If choosen = 1 Then
-            PubDVal(xlApp, "BA90", DtlDInp(vbTab & "  4G: "))
-            PubDVal(xlApp, "BA91", DtlDInp(vbTab & "3.5G: "))
-            PubDVal(xlApp, "BA92", DtlDInp(vbTab & "  3G: "))
-            PubDVal(xlApp, "BA93", DtlDInp(vbTab & "2.5G: "))
-            PubDVal(xlApp, "BA94", DtlDInp(vbTab & "  2G: "))
-            PubDVal(xlApp, "BA95", DtlDInp(vbTab & "1.5G: "))
-            PubDVal(xlApp, "BA96", DtlDInp(vbTab & "  1G: "))
-            PubDVal(xlApp, "BA97", DtlDInp(vbTab & "0.5G: "))
-        End If
-    End Sub
-
-    ''' <summary>
-    ''' スラブユニット.
-    ''' </summary>
-    ''' <param name="xlApp">Excel Application.</param>
-    ''' <param name="choosen">Selection.</param>
-    Friend Sub SlabUnit(xlApp As Application, choosen As Double)
-        If choosen = 1 Then
-            PubDVal(xlApp, "BA99", DtlDInp(vbTab & "  4G: "))
-            PubDVal(xlApp, "BA100", DtlDInp(vbTab & "3.5G: "))
-            PubDVal(xlApp, "BA101", DtlDInp(vbTab & "  3G: "))
-            PubDVal(xlApp, "BA102", DtlDInp(vbTab & "2.5G: "))
-            PubDVal(xlApp, "BA103", DtlDInp(vbTab & "  2G: "))
-            PubDVal(xlApp, "BA104", DtlDInp(vbTab & "1.5G: "))
-            PubDVal(xlApp, "BA105", DtlDInp(vbTab & "  1G: "))
-        End If
-    End Sub
+    ' TODO
 
     ''' <summary>
     ''' 電気温水器.
@@ -257,16 +172,6 @@ Friend Module Util
     End Sub
 
     ''' <summary>
-    ''' コーナー.
-    ''' </summary>
-    ''' <param name="xlApp">Excel Application.</param>
-    Friend Sub JtCor(xlApp As Application)
-        PubDVal(xlApp, "BA169", DtlDInp(vbTab & "D16: "))
-        PubDVal(xlApp, "BA168", DtlDInp(vbTab & "D13: "))
-        PubDVal(xlApp, "BA167", DtlDInp(vbTab & "D10: "))
-    End Sub
-
-    ''' <summary>
     ''' ロングコーナー.
     ''' </summary>
     ''' <param name="xlApp">Excel Application.</param>
@@ -279,19 +184,6 @@ Friend Module Util
             PubDVal(xlApp, "BA174", DtlDInp(vbTab & "D16 (1250×1750): "))
             PubDVal(xlApp, "BA176", DtlDInp(vbTab & "D10 ( 500×1500): "))
             PubDVal(xlApp, "BA175", DtlDInp(vbTab & "D10 ( 500×1000): "))
-        End If
-    End Sub
-
-    ''' <summary>
-    ''' 端部 (D16).
-    ''' </summary>
-    ''' <param name="xlApp">Excel Application.</param>
-    ''' <param name="choosen">Selection.</param>
-    Friend Sub Edge(xlApp As Application, choosen As Double)
-        If choosen = 1 Then
-            PubDVal(xlApp, "BA178", DtlDInp(vbTab & "670×780: "))
-            PubDVal(xlApp, "BA177", DtlDInp(vbTab & "570×780: "))
-            PubDVal(xlApp, "BA170", DtlDInp(vbTab & "390×780: "))
         End If
     End Sub
 
