@@ -125,7 +125,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to WUFOIOadseWMlyAo44OZ44K/KSDph43ph48=.
+        '''  Looks up a localized string similar to WUFOIOadseWMlyAo44OX44Os44Kt44Oj44K5KSDph43ph48=.
         '''</summary>
         Friend ReadOnly Property key_ser() As String
             Get
@@ -134,7 +134,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to https://raw.githubusercontent.com/Tynab/Tynab/main/app/Touhoku%20Beta%20Weight.
+        '''  Looks up a localized string similar to https://raw.githubusercontent.com/Tynab/Tynab/main/app/Touhoku%20Pca%20Weight.
         '''</summary>
         Friend ReadOnly Property link_app() As String
             Get
@@ -152,7 +152,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to https://raw.githubusercontent.com/Tynab/Tynab/main/ver/Touhoku%20Beta%20Weight.
+        '''  Looks up a localized string similar to https://raw.githubusercontent.com/Tynab/Tynab/main/ver/Touhoku%20Pca%20Weight.
         '''</summary>
         Friend ReadOnly Property link_ver() As String
             Get

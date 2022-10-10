@@ -146,11 +146,11 @@
     <value>..\Resources\gUpdating.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="key_ser" xml:space="preserve">
-    <value>WUFOIOadseWMlyAo44OZ44K/KSDph43ph48=</value>
+    <value>WUFOIOadseWMlyAo44OX44Os44Kt44Oj44K5KSDph43ph48=</value>
     <comment>số seri</comment>
   </data>
   <data name="link_app" xml:space="preserve">
-    <value>https://raw.githubusercontent.com/Tynab/Tynab/main/app/Touhoku%20Beta%20Weight</value>
+    <value>https://raw.githubusercontent.com/Tynab/Tynab/main/app/Touhoku%20Pca%20Weight</value>
     <comment>đường dẫn tải phần mềm trên pastebin</comment>
   </data>
   <data name="link_base" xml:space="preserve">
@@ -158,7 +158,7 @@
     <comment>đường dẫn cơ bản</comment>
   </data>
   <data name="link_ver" xml:space="preserve">
-    <value>https://raw.githubusercontent.com/Tynab/Tynab/main/ver/Touhoku%20Beta%20Weight</value>
+    <value>https://raw.githubusercontent.com/Tynab/Tynab/main/ver/Touhoku%20Pca%20Weight</value>
     <comment>đường dẫn kiểm tra phiên bản trên pastebin</comment>
   </data>
 </root>
