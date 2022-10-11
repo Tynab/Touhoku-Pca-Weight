@@ -132,10 +132,10 @@
             "ComponentsUrl" = "8:"
                 "Items"
                 {
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.8.1"
                     {
-                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
-                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    "Name" = "8:Microsoft .NET Framework 4.8.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.8.1"
                     }
                 }
             }
@@ -376,7 +376,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Touhoku Pca Weight"
         "ProductCode" = "8:{61414E3A-E8BE-4D4F-9FB5-2A588A6F529D}"
-        "PackageCode" = "8:{D77D2ABF-4846-4657-948E-525744B5C61A}"
+        "PackageCode" = "8:{04F1C7FD-4713-485E-AEA1-3F601577A893}"
         "UpgradeCode" = "8:{1A1D145D-00E1-4C59-BFF1-D3BD351B5887}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -935,7 +935,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_84969CE0E42E471A827B3519226E0461"
             {
-            "SourcePath" = "8:..\\Touhoku Pca Weight\\obj\\Debug\\Touhoku Pca Weight.exe"
+            "SourcePath" = "8:..\\Touhoku Pca Weight\\obj\\Release\\Touhoku Pca Weight.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_165B3C6B371540188DAA62E4B0A5CF8B"

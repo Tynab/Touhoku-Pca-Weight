@@ -8,7 +8,7 @@ Friend Module Util
     ''' <param name="choosen">Selection.</param>
     Friend Sub Fare(xlApp As Application, choosen As Double)
         If choosen = 1 Then
-            DctVal(xlApp, "BA151", choosen)
+            DctVal(xlApp, "BA150", choosen)
         End If
     End Sub
 
@@ -278,29 +278,29 @@ Friend Module Util
         PubSVal(xlApp, vbTab & "住所" & vbTab & vbTab & vbTab & vbTab & vbTab & vbTab & vbTab & vbTab & vbTab & ": ", "BJ14")
         Dim curingShRingTree = DtlDInpDesc(vbTab & "養生シート輪木 (ｾｯﾄ)", vbTab & vbTab & vbTab & vbTab & "[3.6×5.4]" & vbTab & vbTab)
         If curingShRingTree > 0 Then
-            DctVal(xlApp, "BA144", curingShRingTree)
+            DctVal(xlApp, "BA143", curingShRingTree)
         Else
-            DctVal(xlApp, "BA144", 1)
-            ClrVal(xlApp, "BF144")
-            ClrVal(xlApp, "CB144")
+            DctVal(xlApp, "BA143", 1)
+            ClrVal(xlApp, "BF143")
+            ClrVal(xlApp, "CB143")
         End If
-        PubDVal(xlApp, "BA141", DtlDInpDesc(vbTab & "給水用スリーブホルダー・D10用 (箱)", vbTab & vbTab & "[50ﾊﾟｲ]" & vbTab & vbTab & vbTab))
-        PubDVal(xlApp, "BA142", DtlDInpDesc(vbTab & "排水用スリーブホルダー・D10用 (箱)", vbTab & vbTab & "[50ﾊﾟｲ 75ﾊﾟｲ]" & vbTab & vbTab))
-        PubDVal(xlApp, "BA133", DtlDInpDesc(vbTab & "カットスクリュー・Ⅱ (袋)", vbTab & vbTab & vbTab & "[M12ﾖｳ 50ｺｲﾘ]" & vbTab & vbTab))
-        PubDVal(xlApp, "BA147", DtlDInpDesc(vbTab & "スペーサーブロック (個)", vbTab & vbTab & vbTab & vbTab & "[H60・70・80]" & vbTab & vbTab))
-        PubDVal(xlApp, "BA134", DtlDInpDesc(vbTab & "PCa基礎梁 敷き鉄板 (枚)", vbTab & vbTab & vbTab & vbTab & "[1.6t×200×300]" & vbTab & vbTab))
-        PubDVal(xlApp, "BA135", DtlDInpDesc(vbTab & "PCa基礎梁 敷き鉄板 (枚)", vbTab & vbTab & vbTab & vbTab & "[3.2t×200×300]" & vbTab & vbTab))
-        PubDVal(xlApp, "BA136", DtlDInpDesc(vbTab & "PCa基礎梁 土台用アンカー (本)", vbTab & vbTab & vbTab & "[M12×147]" & vbTab & vbTab))
-        PubDVal(xlApp, "BA138", DtlDInpDesc(vbTab & "PCa基礎梁 ホールダウンカンカーボルト (本)", vbTab & "[M12×170]" & vbTab & vbTab))
-        PubDVal(xlApp, "BA143", DtlDInpDesc(vbTab & "PCa基礎梁 BF用柱脚両ネジボルト (本)", vbTab & vbTab & "[M16×70]" & vbTab & vbTab))
-        PubDVal(xlApp, "BA137", DtlDInpDesc(vbTab & "PCa基礎梁 ホールダウンカンカーボルト (本)", vbTab & "[M12×387]" & vbTab & vbTab))
-        PubDVal(xlApp, "BA139", DtlDInpDesc(vbTab & "マグネット差筋アンカーD13 (ｾｯﾄ)", vbTab & vbTab & vbTab & "[直]" & vbTab & vbTab & vbTab))
-        PubDVal(xlApp, "BA140", DtlDInpDesc(vbTab & "マグネット差筋アンカーD13 (ｾｯﾄ)", vbTab & vbTab & vbTab & "[曲]" & vbTab & vbTab & vbTab))
-        PubDVal(xlApp, "BA146", DtlDInp(vbTab & "カットスクリューⅡ・専用ピット (個)" & vbTab & vbTab & vbTab & vbTab & vbTab & ": "))
-        PubDVal(xlApp, "BA149", DtlDInpDesc(vbTab & "グリッパーM12アンカー用D16 (箱)", vbTab & vbTab & vbTab & "[TG1216D 50ｺ/ﾊｺ]" & vbTab))
-        PubDVal(xlApp, "BA145", DtlDInpDesc(vbTab & "結束線メッキ450 (ｹｰｽ)", vbTab & vbTab & vbTab & vbTab & "[20kg]" & vbTab & vbTab & vbTab))
-        PubDVal(xlApp, "BA150", DtlDInpDesc(vbTab & "Ｕボルト (ｾｯﾄ)", vbTab & vbTab & vbTab & vbTab & vbTab & "[M8]" & vbTab & vbTab & vbTab))
+        PubDVal(xlApp, "BA140", DtlDInpDesc(vbTab & "給水用スリーブホルダー・D10用 (箱)", vbTab & vbTab & "[50ﾊﾟｲ]" & vbTab & vbTab & vbTab))
+        PubDVal(xlApp, "BA141", DtlDInpDesc(vbTab & "排水用スリーブホルダー・D10用 (箱)", vbTab & vbTab & "[50ﾊﾟｲ 75ﾊﾟｲ]" & vbTab & vbTab))
+        PubDVal(xlApp, "BA132", DtlDInpDesc(vbTab & "カットスクリュー・Ⅱ (袋)", vbTab & vbTab & vbTab & "[M12ﾖｳ 50ｺｲﾘ]" & vbTab & vbTab))
+        PubDVal(xlApp, "BA146", DtlDInpDesc(vbTab & "スペーサーブロック (個)", vbTab & vbTab & vbTab & vbTab & "[H60・70・80]" & vbTab & vbTab))
+        PubDVal(xlApp, "BA133", DtlDInpDesc(vbTab & "PCa基礎梁 敷き鉄板 (枚)", vbTab & vbTab & vbTab & vbTab & "[1.6t×200×300]" & vbTab & vbTab))
+        PubDVal(xlApp, "BA134", DtlDInpDesc(vbTab & "PCa基礎梁 敷き鉄板 (枚)", vbTab & vbTab & vbTab & vbTab & "[3.2t×200×300]" & vbTab & vbTab))
+        PubDVal(xlApp, "BA135", DtlDInpDesc(vbTab & "PCa基礎梁 土台用アンカー (本)", vbTab & vbTab & vbTab & "[M12×147]" & vbTab & vbTab))
+        PubDVal(xlApp, "BA137", DtlDInpDesc(vbTab & "PCa基礎梁 ホールダウンカンカーボルト (本)", vbTab & "[M12×170]" & vbTab & vbTab))
+        PubDVal(xlApp, "BA142", DtlDInpDesc(vbTab & "PCa基礎梁 BF用柱脚両ネジボルト (本)", vbTab & vbTab & "[M16×70]" & vbTab & vbTab))
+        PubDVal(xlApp, "BA136", DtlDInpDesc(vbTab & "PCa基礎梁 ホールダウンカンカーボルト (本)", vbTab & "[M12×387]" & vbTab & vbTab))
+        PubDVal(xlApp, "BA138", DtlDInpDesc(vbTab & "マグネット差筋アンカーD13 (ｾｯﾄ)", vbTab & vbTab & vbTab & "[直]" & vbTab & vbTab & vbTab))
+        PubDVal(xlApp, "BA139", DtlDInpDesc(vbTab & "マグネット差筋アンカーD13 (ｾｯﾄ)", vbTab & vbTab & vbTab & "[曲]" & vbTab & vbTab & vbTab))
+        PubDVal(xlApp, "BA145", DtlDInp(vbTab & "カットスクリューⅡ・専用ピット (個)" & vbTab & vbTab & vbTab & vbTab & vbTab & ": "))
+        PubDVal(xlApp, "BA148", DtlDInpDesc(vbTab & "グリッパーM12アンカー用D16 (箱)", vbTab & vbTab & vbTab & "[TG1216D 50ｺ/ﾊｺ]" & vbTab))
+        PubDVal(xlApp, "BA144", DtlDInpDesc(vbTab & "結束線メッキ450 (ｹｰｽ)", vbTab & vbTab & vbTab & vbTab & "[20kg]" & vbTab & vbTab & vbTab))
+        PubDVal(xlApp, "BA149", DtlDInpDesc(vbTab & "Ｕボルト (ｾｯﾄ)", vbTab & vbTab & vbTab & vbTab & vbTab & "[M8]" & vbTab & vbTab & vbTab))
         ' Extend
-        PubDVal(xlApp, "BA148", DtlDInpDesc(vbTab & "樹脂スペーサー (個)", vbTab & vbTab & vbTab & vbTab & "[70×80 50ｺ/ﾊｺ]" & vbTab & vbTab))
+        PubDVal(xlApp, "BA147", DtlDInpDesc(vbTab & "樹脂スペーサー (個)", vbTab & vbTab & vbTab & vbTab & "[70×80 50ｺ/ﾊｺ]" & vbTab & vbTab))
     End Sub
 End Module
