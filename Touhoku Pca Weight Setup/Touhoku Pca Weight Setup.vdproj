@@ -27,6 +27,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_6549BAB1755C430A881D2A6CD2602928"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_701455E2E00E4BE0858013F90221D898"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -46,12 +52,6 @@
         "Entry"
         {
         "MsmKey" = "8:_BB67063BAFF341B98D2745529FB19083"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_BCDBB65250854894B61ED3383169F3DF"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -130,6 +130,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -200,6 +208,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6549BAB1755C430A881D2A6CD2602928"
+            {
+            "SourcePath" = "8:..\\res\\ic.ico"
+            "TargetName" = "8:ic.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_165B3C6B371540188DAA62E4B0A5CF8B"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_701455E2E00E4BE0858013F90221D898"
             {
             "SourcePath" = "8:..\\res\\BSLuffy.bmp"
@@ -244,26 +272,6 @@
             {
             "SourcePath" = "8:..\\res\\BSNami.bmp"
             "TargetName" = "8:BSNami.bmp"
-            "Tag" = "8:"
-            "Folder" = "8:_165B3C6B371540188DAA62E4B0A5CF8B"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BCDBB65250854894B61ED3383169F3DF"
-            {
-            "SourcePath" = "8:..\\res\\ic.ico"
-            "TargetName" = "8:ic.ico"
             "Tag" = "8:"
             "Folder" = "8:_165B3C6B371540188DAA62E4B0A5CF8B"
             "Condition" = "8:"
@@ -385,7 +393,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:_BCDBB65250854894B61ED3383169F3DF"
+        "ARPPRODUCTICON" = "8:_6549BAB1755C430A881D2A6CD2602928"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -499,7 +507,7 @@
             "Target" = "8:_84969CE0E42E471A827B3519226E0461"
             "Folder" = "8:_807D7748D13C47C6B4E6B69E8A6A5172"
             "WorkingFolder" = "8:_165B3C6B371540188DAA62E4B0A5CF8B"
-            "Icon" = "8:_BCDBB65250854894B61ED3383169F3DF"
+            "Icon" = "8:_6549BAB1755C430A881D2A6CD2602928"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_F9532DFADA6D47E5BABA832A06CB275E"
@@ -513,7 +521,7 @@
             "Target" = "8:_84969CE0E42E471A827B3519226E0461"
             "Folder" = "8:_100E933C3555476E9BA76A76AC789EE1"
             "WorkingFolder" = "8:_165B3C6B371540188DAA62E4B0A5CF8B"
-            "Icon" = "8:_BCDBB65250854894B61ED3383169F3DF"
+            "Icon" = "8:_6549BAB1755C430A881D2A6CD2602928"
             "Feature" = "8:"
             }
         }

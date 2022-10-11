@@ -116,6 +116,9 @@ Partial Class FrmUpdate
         Me.lblCapacity.Text = "0 MB / 0 MB"
         Me.lblCapacity.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
+        'tmrMain
+        '
+        '
         'FrmUpdate
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -123,6 +126,7 @@ Partial Class FrmUpdate
         Me.ClientSize = New System.Drawing.Size(360, 240)
         Me.ControlBox = False
         Me.Controls.Add(Me.pnlMain)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
