@@ -1,4 +1,5 @@
-﻿Imports System
+﻿Imports System.Resources
+Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 
@@ -33,3 +34,4 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyVersion("22.10.11.0")>
 <Assembly: AssemblyFileVersion("22.10.11.0")>
+<Assembly: NeutralResourcesLanguage("ja")>
