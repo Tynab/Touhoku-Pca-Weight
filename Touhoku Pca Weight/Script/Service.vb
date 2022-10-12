@@ -39,7 +39,7 @@ Friend Module Service
         SlabLType(xlApp, HdrYNQ(vbTab & vbTab & "スラブＬ型 (D13): "), truck2Ton)
         ' Slab hook type
         SlabHookType(xlApp, HdrYNQ(vbTab & vbTab & "スラブフック型 (D13): "), truck2Ton)
-        ' Slab bending L type
+        ' Slab reinforcement L type
         SlabReinfLType(xlApp, HdrYNQ(vbTab & vbTab & "スラブ補強Ｌ型 (D10): "), truck2Ton)
         ' Parts
         PrefWarn(vbTab & vbTab & "副資材リスト")

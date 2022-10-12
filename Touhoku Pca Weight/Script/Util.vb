@@ -92,9 +92,9 @@ Friend Module Util
     ''' <param name="choosen">Selection.</param>
     Friend Sub EndSlabForDeepFnd(xlApp As Application, choosen As Double)
         If choosen = 1 Then
-            PubDModVal(xlApp, "116", "600×450　　フック付", 0.7, DtlDInpDesc(vbTab & "600×450 ", "[0.7]" & vbTab))
-            PubDVal(xlApp, "BA118", DtlDInp(vbTab & "600×350" & vbTab & vbTab & ": "))
-            PubDModVal(xlApp, "117", "600×250　　フック付", 0.6, DtlDInpDesc(vbTab & "600×250 ", "[0.6]" & vbTab))
+            PubDModVal(xlApp, "116", "600×450　　フック付", 0.7, DtlDInp(vbTab & "600×450: "))
+            PubDVal(xlApp, "BA118", DtlDInp(vbTab & "600×350: "))
+            PubDModVal(xlApp, "117", "600×250　　フック付", 0.6, DtlDInp(vbTab & "600×250: "))
         End If
     End Sub
 
@@ -105,9 +105,9 @@ Friend Module Util
     ''' <param name="choosen">Selection.</param>
     Friend Sub UType(xlApp As Application, choosen As Double)
         If choosen = 1 Then
-            PubDModVal(xlApp, "119", "D16", "（コノ字型）", "900×280×900", 3.4, DtlDInpDesc(vbTab & "900×280×900 ", "[3.4]" & vbTab))
-            PubDModVal(xlApp, "121", "900×180×900", 3.2, DtlDInpDesc(vbTab & "900×180×900 ", "[3.2]" & vbTab))
-            PubDModVal(xlApp, "120", "D16", "（Ｕノ字型）", "900×80×900", 3.1, DtlDInpDesc(vbTab & "900× 80×900 ", "[3.1]" & vbTab))
+            PubDModVal(xlApp, "119", "D16", "（コノ字型）", "900×280×900", 3.4, DtlDInp(vbTab & "900×280×900: "))
+            PubDModVal(xlApp, "121", "900×180×900", 3.2, DtlDInp(vbTab & "900×180×900: "))
+            PubDModVal(xlApp, "120", "D16", "（Ｕノ字型）", "900×80×900", 3.1, DtlDInp(vbTab & "900× 80×900: "))
         End If
     End Sub
 
@@ -118,8 +118,8 @@ Friend Module Util
     ''' <param name="choosen">Selection.</param>
     Friend Sub Haunch(xlApp As Application, choosen As Double)
         If choosen = 1 Then
-            PubDModVal(xlApp, "123", "900×曲（H250）×900", 3.5, DtlDInpDesc(vbTab & "D16 ", "[3.5]" & vbTab))
-            PubDModVal(xlApp, "122", "D13", "750×曲（H250）×750", 2, DtlDInpDesc(vbTab & "D13 ", "[2.0]" & vbTab))
+            PubDModVal(xlApp, "123", "900×曲（H250）×900", 3.5, DtlDInp(vbTab & "D16: "))
+            PubDModVal(xlApp, "122", "D13", "750×曲（H250）×750", 2, DtlDInp(vbTab & "D13: "))
         End If
     End Sub
 
@@ -179,19 +179,19 @@ Friend Module Util
     Friend Sub SlabStr(xlApp As Application, choosen As Double, truck2Ton As Double)
         If choosen = 1 Then
             If Not truck2Ton = 1 Then
-                PubDVal(xlApp, "BA57", DtlDInp(vbTab & "5500" & vbTab & vbTab & ":"))
-                PubDVal(xlApp, "BA58", DtlDInp(vbTab & "5000" & vbTab & vbTab & ":"))
+                PubDVal(xlApp, "BA57", DtlDInp(vbTab & "5500: "))
+                PubDVal(xlApp, "BA58", DtlDInp(vbTab & "5000: "))
             End If
-            PubDVal(xlApp, "BA59", DtlDInp(vbTab & "4500" & vbTab & vbTab & ":"))
-            PubDVal(xlApp, "BA60", DtlDInp(vbTab & "4000" & vbTab & vbTab & ":"))
-            PubDVal(xlApp, "BA61", DtlDInp(vbTab & "3500" & vbTab & vbTab & ":"))
-            PubDVal(xlApp, "BA62", DtlDInp(vbTab & "3000" & vbTab & vbTab & ":"))
-            PubDVal(xlApp, "BA63", DtlDInp(vbTab & "2500" & vbTab & vbTab & ":"))
-            PubDVal(xlApp, "BA64", DtlDInp(vbTab & "2000" & vbTab & vbTab & ":"))
-            PubDVal(xlApp, "BA65", DtlDInp(vbTab & "1500" & vbTab & vbTab & ":"))
-            PubDModVal(xlApp, "66", "1300", 1.4, DtlDInpDesc(vbTab & "1300 ", "[1.4]" & vbTab))
-            PubDVal(xlApp, "BA67", DtlDInp(vbTab & "1000" & vbTab & vbTab & ":"))
-            PubDVal(xlApp, "BA68", DtlDInp(vbTab & " 900" & vbTab & vbTab & ":"))
+            PubDVal(xlApp, "BA59", DtlDInp(vbTab & "4500: "))
+            PubDVal(xlApp, "BA60", DtlDInp(vbTab & "4000: "))
+            PubDVal(xlApp, "BA61", DtlDInp(vbTab & "3500: "))
+            PubDVal(xlApp, "BA62", DtlDInp(vbTab & "3000: "))
+            PubDVal(xlApp, "BA63", DtlDInp(vbTab & "2500: "))
+            PubDVal(xlApp, "BA64", DtlDInp(vbTab & "2000: "))
+            PubDVal(xlApp, "BA65", DtlDInp(vbTab & "1500: "))
+            PubDModVal(xlApp, "66", "1300", 1.4, DtlDInp(vbTab & "1300: "))
+            PubDVal(xlApp, "BA67", DtlDInp(vbTab & "1000: "))
+            PubDVal(xlApp, "BA68", DtlDInp(vbTab & " 900: "))
         End If
     End Sub
 
@@ -227,18 +227,18 @@ Friend Module Util
     Friend Sub SlabHookType(xlApp As Application, choosen As Double, truck2Ton As Double)
         If choosen = 1 Then
             If Not truck2Ton = 1 Then
-                PubDVal(xlApp, "BA46", DtlDInp(vbTab & "95×5405" & vbTab & vbTab & ":"))
-                PubDVal(xlApp, "BA47", DtlDInp(vbTab & "95×4905" & vbTab & vbTab & ":"))
+                PubDVal(xlApp, "BA46", DtlDInp(vbTab & "95×5405: "))
+                PubDVal(xlApp, "BA47", DtlDInp(vbTab & "95×4905: "))
             End If
-            PubDVal(xlApp, "BA48", DtlDInp(vbTab & "95×4405" & vbTab & vbTab & ":"))
-            PubDVal(xlApp, "BA49", DtlDInp(vbTab & "95×3905" & vbTab & vbTab & ":"))
-            PubDVal(xlApp, "BA50", DtlDInp(vbTab & "95×3405" & vbTab & vbTab & ":"))
-            PubDVal(xlApp, "BA51", DtlDInp(vbTab & "95×2905" & vbTab & vbTab & ":"))
-            PubDVal(xlApp, "BA52", DtlDInp(vbTab & "95×2405" & vbTab & vbTab & ":"))
-            PubDVal(xlApp, "BA53", DtlDInp(vbTab & "95×1905" & vbTab & vbTab & ":"))
-            PubDVal(xlApp, "BA54", DtlDInp(vbTab & "95×1405" & vbTab & vbTab & ":"))
-            PubDVal(xlApp, "BA55", DtlDInp(vbTab & "95× 905" & vbTab & vbTab & ":"))
-            PubDModVal(xlApp, "56", "490(両フック)", 1.2, DtlDInpDesc(vbTab & "95×490×95 ", "[1.2]" & vbTab))
+            PubDVal(xlApp, "BA48", DtlDInp(vbTab & "95×4405: "))
+            PubDVal(xlApp, "BA49", DtlDInp(vbTab & "95×3905: "))
+            PubDVal(xlApp, "BA50", DtlDInp(vbTab & "95×3405: "))
+            PubDVal(xlApp, "BA51", DtlDInp(vbTab & "95×2905: "))
+            PubDVal(xlApp, "BA52", DtlDInp(vbTab & "95×2405: "))
+            PubDVal(xlApp, "BA53", DtlDInp(vbTab & "95×1905: "))
+            PubDVal(xlApp, "BA54", DtlDInp(vbTab & "95×1405: "))
+            PubDVal(xlApp, "BA55", DtlDInp(vbTab & "95× 905: "))
+            PubDModVal(xlApp, "56", "490(両フック)", 1.2, DtlDInp(vbTab & "95×490×95: "))
         End If
     End Sub
 
