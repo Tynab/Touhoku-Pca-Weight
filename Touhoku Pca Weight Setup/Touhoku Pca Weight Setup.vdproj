@@ -375,15 +375,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Touhoku Pca Weight"
-        "ProductCode" = "8:{61414E3A-E8BE-4D4F-9FB5-2A588A6F529D}"
-        "PackageCode" = "8:{04F1C7FD-4713-485E-AEA1-3F601577A893}"
+        "ProductCode" = "8:{7B694556-AC96-4490-93A8-C116ABA1E2D4}"
+        "PackageCode" = "8:{6FFD5C22-DCBD-4FC0-864E-94E0F1061DE5}"
         "UpgradeCode" = "8:{1A1D145D-00E1-4C59-BFF1-D3BD351B5887}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:22.10.11"
+        "ProductVersion" = "8:22.10.12"
         "Manufacturer" = "8:YAN"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -935,7 +935,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_84969CE0E42E471A827B3519226E0461"
             {
-            "SourcePath" = "8:..\\Touhoku Pca Weight\\obj\\Debug\\Touhoku Pca Weight.exe"
+            "SourcePath" = "8:..\\Touhoku Pca Weight\\obj\\Release\\Touhoku Pca Weight.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_165B3C6B371540188DAA62E4B0A5CF8B"

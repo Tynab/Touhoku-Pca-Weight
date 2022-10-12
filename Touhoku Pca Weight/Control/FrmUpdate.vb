@@ -29,7 +29,12 @@ Public Class FrmUpdate
 
     ' Timer main
     Private Sub TmrMain_Tick(sender As Object, e As EventArgs) Handles tmrMain.Tick
-
+        If lblPercent.Text = "100%" Then
+            tmrMain.StopAdv()
+            Start(FILE_SETUP_ADR)
+            FOFrm()
+            Close()
+        End If
     End Sub
 
     ' Form closing
