@@ -13,7 +13,7 @@ Friend Module Service
         PrefWarn(vbTab & vbTab & "下端 (D13)")
         LwrEnd(xlApp, truck2Ton)
         ' Edge
-        Edge(xlApp, HdrYNQ(vbTab & vbTab & "端部 (D10): "))
+        Edge(xlApp, HdrYNQ(vbTab & vbTab & "端部 (D10): "), truck2Ton)
         ' Deep foundation
         DeepFnd(xlApp, HdrYNQ(vbTab & vbTab & "深基礎 (D16): "), truck2Ton)
         ' Corner joint

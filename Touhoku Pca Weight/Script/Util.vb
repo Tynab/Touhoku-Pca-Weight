@@ -36,20 +36,23 @@ Friend Module Util
     ''' 端部 (D10).
     ''' </summary>
     ''' <param name="xlApp">Excel Application.</param>
+    ''' <param name="choosen">Selection.</param>
     ''' <param name="truck2Ton">2 ton truck.</param>
-    Friend Sub Edge(xlApp As Application, truck2Ton As Double)
-        If Not truck2Ton = 1 Then
-            PubDVal(xlApp, "BA79", DtlDInp(vbTab & "5500: "))
-            PubDVal(xlApp, "BA80", DtlDInp(vbTab & "5000: "))
+    Friend Sub Edge(xlApp As Application, choosen As Double, truck2Ton As Double)
+        If choosen = 1 Then
+            If Not truck2Ton = 1 Then
+                PubDVal(xlApp, "BA79", DtlDInp(vbTab & "5500: "))
+                PubDVal(xlApp, "BA80", DtlDInp(vbTab & "5000: "))
+            End If
+            PubDVal(xlApp, "BA81", DtlDInp(vbTab & "4500: "))
+            PubDVal(xlApp, "BA82", DtlDInp(vbTab & "4000: "))
+            PubDVal(xlApp, "BA83", DtlDInp(vbTab & "3500: "))
+            PubDVal(xlApp, "BA84", DtlDInp(vbTab & "3000: "))
+            PubDVal(xlApp, "BA85", DtlDInp(vbTab & "2500: "))
+            PubDVal(xlApp, "BA86", DtlDInp(vbTab & "2000: "))
+            PubDVal(xlApp, "BA87", DtlDInp(vbTab & "1500: "))
+            PubDVal(xlApp, "BA88", DtlDInp(vbTab & "1000: "))
         End If
-        PubDVal(xlApp, "BA81", DtlDInp(vbTab & "4500: "))
-        PubDVal(xlApp, "BA82", DtlDInp(vbTab & "4000: "))
-        PubDVal(xlApp, "BA83", DtlDInp(vbTab & "3500: "))
-        PubDVal(xlApp, "BA84", DtlDInp(vbTab & "3000: "))
-        PubDVal(xlApp, "BA85", DtlDInp(vbTab & "2500: "))
-        PubDVal(xlApp, "BA86", DtlDInp(vbTab & "2000: "))
-        PubDVal(xlApp, "BA87", DtlDInp(vbTab & "1500: "))
-        PubDVal(xlApp, "BA88", DtlDInp(vbTab & "1000: "))
     End Sub
 
     ''' <summary>
@@ -227,18 +230,18 @@ Friend Module Util
     Friend Sub SlabHookType(xlApp As Application, choosen As Double, truck2Ton As Double)
         If choosen = 1 Then
             If Not truck2Ton = 1 Then
-                PubDVal(xlApp, "BA46", DtlDInp(vbTab & "95×5405: "))
-                PubDVal(xlApp, "BA47", DtlDInp(vbTab & "95×4905: "))
+                PubDVal(xlApp, "BA46", DtlDInp(vbTab & "95×5405   : "))
+                PubDVal(xlApp, "BA47", DtlDInp(vbTab & "95×4905   : "))
             End If
-            PubDVal(xlApp, "BA48", DtlDInp(vbTab & "95×4405: "))
-            PubDVal(xlApp, "BA49", DtlDInp(vbTab & "95×3905: "))
-            PubDVal(xlApp, "BA50", DtlDInp(vbTab & "95×3405: "))
-            PubDVal(xlApp, "BA51", DtlDInp(vbTab & "95×2905: "))
-            PubDVal(xlApp, "BA52", DtlDInp(vbTab & "95×2405: "))
-            PubDVal(xlApp, "BA53", DtlDInp(vbTab & "95×1905: "))
-            PubDVal(xlApp, "BA54", DtlDInp(vbTab & "95×1405: "))
-            PubDVal(xlApp, "BA55", DtlDInp(vbTab & "95× 905: "))
-            PubDModVal(xlApp, "56", "490(両フック)", 1.2, DtlDInp(vbTab & "95×490×95: "))
+            PubDVal(xlApp, "BA48", DtlDInp(vbTab & "95×4405   : "))
+            PubDVal(xlApp, "BA49", DtlDInp(vbTab & "95×3905   : "))
+            PubDVal(xlApp, "BA50", DtlDInp(vbTab & "95×3405   : "))
+            PubDVal(xlApp, "BA51", DtlDInp(vbTab & "95×2905   : "))
+            PubDVal(xlApp, "BA52", DtlDInp(vbTab & "95×2405   : "))
+            PubDVal(xlApp, "BA53", DtlDInp(vbTab & "95×1905   : "))
+            PubDVal(xlApp, "BA54", DtlDInp(vbTab & "95×1405   : "))
+            PubDVal(xlApp, "BA55", DtlDInp(vbTab & "95× 905   : "))
+            PubDModVal(xlApp, "56", "490(両フック)", 1.2, DtlDInp(vbTab & "95× 490×95: "))
         End If
     End Sub
 
