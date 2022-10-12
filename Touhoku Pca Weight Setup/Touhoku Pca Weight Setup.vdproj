@@ -384,7 +384,7 @@
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:22.10.11"
-        "Manufacturer" = "8:Nephilim"
+        "Manufacturer" = "8:YAN"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
         "Title" = "8:Touhoku Pca Weight Setup"
@@ -935,7 +935,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_84969CE0E42E471A827B3519226E0461"
             {
-            "SourcePath" = "8:..\\Touhoku Pca Weight\\obj\\Release\\Touhoku Pca Weight.exe"
+            "SourcePath" = "8:..\\Touhoku Pca Weight\\obj\\Debug\\Touhoku Pca Weight.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_165B3C6B371540188DAA62E4B0A5CF8B"

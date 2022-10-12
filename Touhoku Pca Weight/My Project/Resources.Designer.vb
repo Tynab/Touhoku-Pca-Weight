@@ -97,7 +97,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Nephilim.
+        '''  Looks up a localized string similar to YAN.
         '''</summary>
         Friend ReadOnly Property co_name() As String
             Get
