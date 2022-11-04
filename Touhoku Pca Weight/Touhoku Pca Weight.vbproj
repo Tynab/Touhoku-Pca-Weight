@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{9915EA2F-17D5-4500-81AB-DC0A03AE1460}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>Touhoku_Pca_Weight.ModuleMain</StartupObject>
+    <StartupObject>Touhoku_Pca_Weight.Main</StartupObject>
     <RootNamespace>Touhoku_Pca_Weight</RootNamespace>
     <AssemblyName>Touhoku Pca Weight</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -99,7 +99,7 @@
     <Compile Include="Control\FrmUpdate.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModuleMain.vb" />
+    <Compile Include="Script\Main.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
